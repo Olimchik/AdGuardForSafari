@@ -5,7 +5,6 @@ const {
     dialog,
     nativeTheme,
     nativeImage,
-    globalShortcut,
 } = require('electron');
 const safariExt = require('safari-ext');
 
@@ -310,20 +309,6 @@ const checkIsInApplicationsFolder = () => {
 let tray;
 
 /**
- * Enables page reload by Cmd+R
- */
-const enablePageReloadByHotkey = () => {
-    globalShortcut.register('CommandOrControl+R', () => {});
-};
-
-/**
- * Disables page reload by Cmd+R
- */
-const disablePageReloadByHotkey = () => {
-    globalShortcut.unregister('CommandOrControl+R');
-};
-
-/**
  * This method will be called when Electron has finished
  * initialization and is ready to create browser windows.
  * Some APIs can only be used after this event occurs.
@@ -391,7 +376,6 @@ app.on('window-all-closed', () => {
     // to stay active until the user quits explicitly with Cmd + Q
     log.info('Hiding dock item');
     app.dock.hide();
-    disablePageReloadByHotkey();
 });
 
 /**
@@ -427,11 +411,3 @@ if (getChannel() === 'MAS') {
         log.error(`Uncaught exception: ${error}`);
     });
 }
-
-// disable refreshing window by hotkey
-app.on('browser-window-focus', () => {
-    enablePageReloadByHotkey();
-});
-app.on('browser-window-blur', () => {
-    disablePageReloadByHotkey();
-});

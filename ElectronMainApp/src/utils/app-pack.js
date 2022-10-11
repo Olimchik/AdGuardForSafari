@@ -1,10 +1,8 @@
 module.exports = (() => {
     const _resourcePath = function (resPath) {
         const path = require('path');
-        const pr = require('electron').remote ? require('electron').remote.process : process;
-        const base = path.dirname(pr.mainModule.filename);
-
-        return path.join(base, resPath);
+        // TODO check if this would work in production
+        return path.join(process.cwd(), resPath);
     };
 
     return {

@@ -68,6 +68,16 @@ const initGroupsSearch = (loadedFiltersInfo, getFilterTemplate) => {
     if (searchInput.value) {
         searchFilters(searchInput.value, filters, groups);
     }
+
+    document.querySelector('#clearGroupFiltersSearch')
+        .addEventListener('click', () => {
+            if (searchInput?.value) {
+                searchInput.value = '';
+                clearSearch(filters);
+                searchFilters('', filters, groups);
+                searchInput.focus();
+            }
+        });
 };
 
 function initFiltersSearch(category, renderCategoryFilters) {
@@ -85,6 +95,23 @@ function initFiltersSearch(category, renderCategoryFilters) {
 
     const SEARCH_DELAY_MS = 250;
 
+    const resetFiltersSearch = () => {
+        ipcRenderer.once('getFiltersMetadataResponse', (e, response) => {
+            const updatedCategory = response.categories.find((cat) => cat.groupId === category.groupId);
+            renderCategoryFilters(updatedCategory);
+            const tabId = document.location.hash;
+            const tab = document.querySelector(tabId);
+            if (!tab) {
+                return;
+            }
+            tab.style.display = 'flex';
+            initFiltersSearch(updatedCategory, renderCategoryFilters);
+        });
+        ipcRenderer.send('renderer-to-main', JSON.stringify({
+            'type': 'getFiltersMetadata',
+        }));
+    };
+
     searchInput.addEventListener('input', utils.debounce((e) => {
         let searchString;
         try {
@@ -96,20 +123,7 @@ function initFiltersSearch(category, renderCategoryFilters) {
         }
 
         if (!searchString) {
-            ipcRenderer.once('getFiltersMetadataResponse', (e, response) => {
-                const updatedCategory = response.categories.find((cat) => cat.groupId === category.groupId);
-                renderCategoryFilters(updatedCategory);
-                const tabId = document.location.hash;
-                const tab = document.querySelector(tabId);
-                if (!tab) {
-                    return;
-                }
-                tab.style.display = 'flex';
-                initFiltersSearch(updatedCategory, renderCategoryFilters);
-            });
-            ipcRenderer.send('renderer-to-main', JSON.stringify({
-                'type': 'getFiltersMetadata',
-            }));
+            resetFiltersSearch();
             return;
         }
 
@@ -129,6 +143,15 @@ function initFiltersSearch(category, renderCategoryFilters) {
                 filtersContainer.appendChild(node);
             });
     }, SEARCH_DELAY_MS));
+
+    document.querySelector(`#antibanner${category.groupId} .clear-filters-search`)
+        .addEventListener('click', () => {
+            if (searchInput?.value) {
+                searchInput.value = '';
+                resetFiltersSearch();
+                searchInput.focus();
+            }
+        });
 }
 
 /**

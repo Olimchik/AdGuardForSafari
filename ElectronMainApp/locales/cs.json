@@ -108,7 +108,7 @@
         "message": "Obecné"
     },
     "options_general_desc": {
-        "message": "AdGuard pro Safari je open source a bezpatný software. Vaše připomínky a příspěvky jsou vítány. Chcete-li nahlásit chybu nebo požádat o funkci, přejděte na stránku <a target='_blank' href='https://link.adtidy.org/forward.html?action=github&from=options_screen&app=safari_extension' class='link'>our Github repo</a>."
+        "message": ""
     },
     "options_allow_acceptable_ads": {
         "message": "Zobrazovat užitečné reklamy"
@@ -160,6 +160,9 @@
     },
     "options_filters_no_enabled": {
         "message": "Nebyly povoleny žádné filtry"
+    },
+    "options_filters_no_filters": {
+        "message": ""
     },
     "options_filters_version": {
         "message": "Verze %s"
@@ -266,17 +269,17 @@
     "options_userfilter": {
         "message": "Uživatelská pravidla"
     },
+    "options_userfilter_no_user_rules": {
+        "message": ""
+    },
     "options_userfilter_info_single": {
         "message": "Uživatelské pravidlo: %s"
     },
     "options_userfilter_info_multi": {
         "message": "Uživatelská pravidla: %s"
     },
-    "options_userfilter_no_user_rules": {
-        "message": "Seznam je prázdný"
-    },
     "options_userfilter_description": {
-        "message": "Zde můžete přidat vlastní pravidla. Tato možnost je doporučena pro pokročilé uživatele, kteří jsou obeznámeni s HTML/CSS. Chcete-li se neučit psát svá vlastní filtrovací pravidla, přečtěte si <a class='spl-user-descr-link' href='https://link.adtidy.org/forward.html?action=filterrules&from=options_screen&app=safari_extension' target='_blank'>filter rules tutorial</a>návod filtrovacích pravidel</a>."
+        "message": ""
     },
     "options_userfilter_import": {
         "message": "Import"
@@ -333,10 +336,10 @@
         "message": "Varování"
     },
     "notification_content_blocker_overlimit_desc": {
-        "message": "Příliš mnoho povolených filtrů. Safari není schopno používat více než %s pravidel v jedné skupině."
+        "message": ""
     },
     "options_content_blocker_overlimit": {
-        "message": "Příliš mnoho povolených filtrů. Safari není schopno používat více než %s pravidel v jedné skupině."
+        "message": ""
     },
     "options_filters_list_search_placeholder": {
         "message": "Hledat"
@@ -402,7 +405,7 @@
         "message": "Blokátory obsahu"
     },
     "options_content_blockers_desc": {
-        "message": "Zapnuté blokátory reklam: %s z 6 (každý může obsahovat až %s pravidel)"
+        "message": ""
     },
     "options_content_blockers_disabled_desc": {
         "message": "Blokátory reklam jsou vypnuty"
@@ -462,7 +465,7 @@
         "message": "6 rozšíření blokování obsahu"
     },
     "onboarding_tooltip_adguard_safari_content_blockers_info": {
-        "message": "Safari omezuje maximální počet pravidel blokování obsahu na %s na jedno rozšíření. To nestačí ke zpracování všech druhů reklam a slídičů, které AdGuard blokuje. Proto poskytujeme 6 rozšíření, čímž zvyšujeme tento limit na %s."
+        "message": ""
     },
     "onboarding_safari_btn": {
         "message": "Otevřít předvolby"
@@ -573,7 +576,7 @@
         }
     },
     "options_cb_rules_overlimit_info": {
-        "message": "Byl překročen limit %s pravidel. Pro správné fungování aplikace vypněte nepotřebná pravidla. <br/>Počet momentálně zapnutých pravidel: %s (vypnutá pravidla: $2)"
+        "message": ""
     },
     "options_cb_disabled_warning": {
         "message": "Vypnuto v Safari"

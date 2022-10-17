@@ -108,7 +108,7 @@
         "message": "一般設定"
     },
     "options_general_desc": {
-        "message": "AdGuard for Safariは無料のオープンソースソフトウェアです。 ユーザー様のフィードバックと貢献を歓迎しております。 バグを報告したり、または機能をリクエストする場合は、<a target='_blank' href='https://link.adtidy.org/forward.html?action=github&from=options_screen&app=safari_extension' class='link'>私たちのGithubリポジトリ</a>へお進みください。"
+        "message": ""
     },
     "options_allow_acceptable_ads": {
         "message": "有用な広告を表示する"
@@ -160,6 +160,9 @@
     },
     "options_filters_no_enabled": {
         "message": "有効フィルタはありません"
+    },
+    "options_filters_no_filters": {
+        "message": ""
     },
     "options_filters_version": {
         "message": "バージョン %s"
@@ -225,7 +228,7 @@
         "message": "バージョン："
     },
     "options_filters_custom_step_final_filter_rules_count": {
-        "message": "ルール数："
+        "message": ""
     },
     "options_filters_custom_step_final_filter_homepage": {
         "message": "ホームページ："
@@ -266,6 +269,9 @@
     "options_userfilter": {
         "message": "ユーザールール"
     },
+    "options_userfilter_no_user_rules": {
+        "message": ""
+    },
     "options_userfilter_info_single": {
         "message": "%s ユーザールール"
     },
@@ -273,7 +279,7 @@
         "message": "%s ユーザールール"
     },
     "options_userfilter_description": {
-        "message": "このフィルタに独自のルールを追加できます。このオプションはHTML/CSSに精通した上級者ユーザーにおすすめです。 <a class='spl-user-descr-link' href='https://link.adtidy.org/forward.html?action=filterrules&from=options_screen&app=safari_extension' target='_blank'>フィルタ・ルールのチュートリアル</a>を読むことで独自のフィルタ・ルールを作成する方法を学べます。"
+        "message": ""
     },
     "options_userfilter_import": {
         "message": "インポート"
@@ -330,10 +336,10 @@
         "message": "警告"
     },
     "notification_content_blocker_overlimit_desc": {
-        "message": "有効フィルタが多すぎています。Safariがひとグループで使用できるルール数は、%s本までです。"
+        "message": ""
     },
     "options_content_blocker_overlimit": {
-        "message": "有効フィルタが多すぎています。Safariがひとグループで使用できるルール数は、%s本までです。"
+        "message": ""
     },
     "options_filters_list_search_placeholder": {
         "message": "検索"
@@ -399,7 +405,7 @@
         "message": "コンテンツブロッカー"
     },
     "options_content_blockers_desc": {
-        "message": "有効広告ブロッカー数：%s/6（それぞれ%s件づつのルールまで使用可）"
+        "message": ""
     },
     "options_content_blockers_disabled_desc": {
         "message": "広告ブロッカーは無効です。"
@@ -459,7 +465,7 @@
         "message": "６つのコンテンツブロック拡張機能"
     },
     "onboarding_tooltip_adguard_safari_content_blockers_info": {
-        "message": "Safariは、コンテンツブロックルールの最大数を拡張機能ごとに%s本に制限しています。この数だと、AdGuardがブロックすべきあらゆる種類の広告やトラッカーに対応できません。そのため、AdGuardは6つの拡張機能を提供することでルール制限数を%s本に増やしています。"
+        "message": ""
     },
     "onboarding_safari_btn": {
         "message": "環境設定を開く"
@@ -570,7 +576,7 @@
         }
     },
     "options_cb_rules_overlimit_info": {
-        "message": "ルール数制限%s本を超えました。アプリが正しく機能するためには不要なルールを無効にしてください。<br/>現在有効なルール数：%s（無効ルール数：$2）"
+        "message": ""
     },
     "options_cb_disabled_warning": {
         "message": "Safariで無効になっています"

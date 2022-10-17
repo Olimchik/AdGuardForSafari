@@ -108,7 +108,7 @@
         "message": "Splošno"
     },
     "options_general_desc": {
-        "message": "AdGuard za Safari je brezplačen in odprtokodni program. Pozdravljamo vaše povratne informacije in prispevke. Če želite prijaviti napako ali zahtevati funkcijo, se obrnite na <a target='_blank' href='https://link.adtidy.org/forward.html?action=github&from=options_screen&app=safari_extension' class='link'>našem Github odlagališču</a>."
+        "message": ""
     },
     "options_allow_acceptable_ads": {
         "message": "Dovoli iskalne oglase in samopromocijo spletnih strani"
@@ -160,6 +160,9 @@
     },
     "options_filters_no_enabled": {
         "message": "Ni omogočenih filtrov"
+    },
+    "options_filters_no_filters": {
+        "message": ""
     },
     "options_filters_version": {
         "message": "različica %s"
@@ -267,7 +270,7 @@
         "message": "Uporabniška pravila"
     },
     "options_userfilter_no_user_rules": {
-        "message": "Seznam je prazen"
+        "message": ""
     },
     "options_userfilter_info_single": {
         "message": "%s uporabniškopravilo"
@@ -276,7 +279,7 @@
         "message": "%s uporabniških pravil"
     },
     "options_userfilter_description": {
-        "message": "Tukaj lahko dodate svoja lastna pravila. Ta možnost je&nbsp;priporočena za napredne uporabnike, ki dobro poznajo HTML/CSS. Preberite <a class='spl-user-descr-link' href='https://link.adtidy.org/forward.html?action=filterrules&from=options_screen&app=safari_extension' target='_blank'>Vodič pravil filtriranja</a> da izveste&nbsp;kako&nbsp;pisati svoja lastna pravila filtriranja."
+        "message": ""
     },
     "options_userfilter_import": {
         "message": "Uvozi"
@@ -333,10 +336,10 @@
         "message": "Opozorilo"
     },
     "notification_content_blocker_overlimit_desc": {
-        "message": "Preveč filtrov je omogočenih. Safari ne more uporabljati več kot %s pravil v eni skupini."
+        "message": ""
     },
     "options_content_blocker_overlimit": {
-        "message": "Preveč filtrov je omogočenih. Safari ne more uporabljati več kot %s pravil v eni skupini."
+        "message": ""
     },
     "options_filters_list_search_placeholder": {
         "message": "Poišči"
@@ -402,7 +405,7 @@
         "message": "Zaviralci vsebine"
     },
     "options_content_blockers_desc": {
-        "message": "Omogočenih zaviralcev oglasov: %s od 6 (vsak lahko vsebuje do %s pravil)"
+        "message": ""
     },
     "options_content_blockers_disabled_desc": {
         "message": "Zaviralci oglasov so onemogočeni"
@@ -462,7 +465,7 @@
         "message": "6 filtrov za zaviranje vsebine"
     },
     "onboarding_tooltip_adguard_safari_content_blockers_info": {
-        "message": "Safari omeji največje število pravil zaviranja vsebine s %s na eno razširitev. To ni dovolj za obdelavo vseh vrst oglasov in sledilcev, da jih AdGuard zavira. Zato nudimo šest razširitev, s čimer to omejitev povečamo na %s."
+        "message": ""
     },
     "onboarding_safari_btn": {
         "message": "Odpri nastavitve"
@@ -573,7 +576,7 @@
         }
     },
     "options_cb_rules_overlimit_info": {
-        "message": "Omejitev %s pravil je presežena. Za pravilno delovanje aplikacije onemogočite nepotrebna pravila.<br/>Trenutno omogočenih pravil: %s (onemogočenih pravil: $2)"
+        "message": ""
     },
     "options_cb_disabled_warning": {
         "message": "Onemogočeno v Safariju"

@@ -108,7 +108,7 @@
         "message": "Umum"
     },
     "options_general_desc": {
-        "message": "AdGuard untuk Safari adalah perangkat lunak sumber terbuka dan gratis. Kami menyambut umpan balik dan kontribusi Anda. Jika Anda ingin melaporkan bug atau meminta fitur, silakan menuju ke <a target='_blank' href='https://link.adtidy.org/forward.html?action=github&from=options_screen&app=safari_extension' class='link'>repo Github kami</a>."
+        "message": ""
     },
     "options_allow_acceptable_ads": {
         "message": "Izinkan iklan pencarian dan promosi mandiri situs web"
@@ -160,6 +160,9 @@
     },
     "options_filters_no_enabled": {
         "message": "Tidak ada penyaring aktif"
+    },
+    "options_filters_no_filters": {
+        "message": ""
     },
     "options_filters_version": {
         "message": "versi %s"
@@ -225,7 +228,7 @@
         "message": "Versi:"
     },
     "options_filters_custom_step_final_filter_rules_count": {
-        "message": "Jumlah Aturan:"
+        "message": ""
     },
     "options_filters_custom_step_final_filter_homepage": {
         "message": "Situs:"
@@ -267,7 +270,7 @@
         "message": "Penyaring pengguna"
     },
     "options_userfilter_no_user_rules": {
-        "message": "Daftar kosong"
+        "message": ""
     },
     "options_userfilter_info_single": {
         "message": "%s aturan pengguna"
@@ -276,7 +279,7 @@
         "message": "%s aturan pengguna"
     },
     "options_userfilter_description": {
-        "message": "Anda dapat menambahkan aturan Anda sendiri ke&nbsp;filter ini. Opsi ini&nbsp;disarankan untuk pengguna tingkat lanjut yang terbiasa dengan HTML / CSS. Baca <a class='spl-user-descr-link' href='https://link.adtidy.org/forward.html?action=filterrules&from=options_screen&app=safari_extension' target='_blank'>tutorial aturan filter</a> untuk&nbsp;mempelajari cara&nbsp;menulis aturan filter Anda sendiri."
+        "message": ""
     },
     "options_userfilter_import": {
         "message": "Impor"
@@ -333,10 +336,10 @@
         "message": "Peringatan"
     },
     "notification_content_blocker_overlimit_desc": {
-        "message": "Terlalu banyak filter diaktifkan. Safari tidak dapat menggunakan lebih dari %s aturan dalam satu grup."
+        "message": ""
     },
     "options_content_blocker_overlimit": {
-        "message": "Terlalu banyak filter diaktifkan. Safari tidak dapat menggunakan lebih dari %s aturan dalam satu grup."
+        "message": ""
     },
     "options_filters_list_search_placeholder": {
         "message": "Cari"
@@ -402,7 +405,7 @@
         "message": "Pemblokir konten"
     },
     "options_content_blockers_desc": {
-        "message": "Pemblokir iklan diaktifkan: %s dari 6 (masing-masing dapat berisi hingga %s aturan)"
+        "message": ""
     },
     "options_content_blockers_disabled_desc": {
         "message": "Pemblokir iklan dinonaktifkan"
@@ -462,7 +465,7 @@
         "message": "6 ekstensi pemblokiran konten"
     },
     "onboarding_tooltip_adguard_safari_content_blockers_info": {
-        "message": "Safari membatasi jumlah maksimum aturan pemblokiran konten dengan %s per ekstensi. Ini tidak cukup untuk menangani semua jenis iklan dan pelacak yang diblokir AdGuard. Itu sebabnya kami menyediakan 6 ekstensi, sehingga meningkatkan batas itu menjadi %s."
+        "message": ""
     },
     "onboarding_safari_btn": {
         "message": "Buka preferensi"
@@ -573,7 +576,7 @@
         }
     },
     "options_cb_rules_overlimit_info": {
-        "message": "Batas %s aturan telah terlampaui. Harap nonaktifkan aturan yang tidak perlu agar aplikasi berfungsi dengan benar.<br/>Aturan yang diaktifkan saat ini: %s (aturan yang dinonaktifkan: $2)"
+        "message": ""
     },
     "options_cb_disabled_warning": {
         "message": "Dinonaktifkan di Safari"

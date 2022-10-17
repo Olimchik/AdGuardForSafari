@@ -21,13 +21,13 @@
         "message": "Часті питання"
     },
     "options_support_faq_description": {
-        "message": "Часті запитання"
+        "message": "Розв'язання відомих проблем"
     },
     "options_support_bug_report_title": {
         "message": "Повідомити про помилку"
     },
     "options_support_bug_report_description": {
-        "message": "Якщо щось не працює правильно в програмі"
+        "message": "Якщо щось не працює в програмі як слід"
     },
     "options_support_incorrect_blocking_title": {
         "message": "Повідомити про неправильне блокування"
@@ -78,7 +78,7 @@
         "message": "Дізнатися більше про програму"
     },
     "options_popup_title_placeholder": {
-        "message": "Введіть назву фільтру"
+        "message": "Введіть назву фільтра"
     },
     "main_menu_hide": {
         "message": "Приховати"
@@ -102,13 +102,13 @@
         "message": "Розширення файлу має бути .json"
     },
     "options_settings_import_error": {
-        "message": "Помилка імпортування налаштувань"
+        "message": "Помилка під час імпорту налаштувань"
     },
     "options_general_settings": {
         "message": "Загальні"
     },
     "options_general_desc": {
-        "message": "AdGuard for Safari — безкоштовне програмне забезпечення з відкритим кодом. Ми вдячні за ваші відгуки та пропозиції. Ви можете повідомити про помилку або надіслати запит на функцію <a target='_blank' href='https://link.adtidy.org/forward.html?action=github&from=options_screen&app=safari_extension' class='link'>у нашому репозиторії на Github</a>."
+        "message": ""
     },
     "options_allow_acceptable_ads": {
         "message": "Дозволити рекламу в результатах пошуку і саморекламу вебсайтів"
@@ -161,6 +161,9 @@
     "options_filters_no_enabled": {
         "message": "Немає увімкнених фільтрів"
     },
+    "options_filters_no_filters": {
+        "message": ""
+    },
     "options_filters_version": {
         "message": "версія %s"
     },
@@ -180,10 +183,10 @@
         "message": "Помилка імпортування"
     },
     "options_filters_custom_step_one_title": {
-        "message": "Додавання нового фільтру"
+        "message": "Додавання нового фільтра"
     },
     "options_filters_custom_step_one_input_placeholder": {
-        "message": "Введіть URL-адресу фільтру"
+        "message": "Введіть URL-адресу фільтра"
     },
     "options_filters_custom_step_one_url_desc": {
         "message": "Введіть дійсну URL-адресу фільтра."
@@ -213,7 +216,7 @@
         "message": "Спробувати знову"
     },
     "options_filters_custom_step_final_title": {
-        "message": "Додавання нового фільтру"
+        "message": "Додавання нового фільтра"
     },
     "options_filters_custom_step_final_filter_title": {
         "message": "Назва:"
@@ -266,17 +269,17 @@
     "options_userfilter": {
         "message": "Правила користувача"
     },
+    "options_userfilter_no_user_rules": {
+        "message": ""
+    },
     "options_userfilter_info_single": {
         "message": "%s правило користувача"
     },
     "options_userfilter_info_multi": {
         "message": "Правил користувача: %s"
     },
-    "options_userfilter_no_user_rules": {
-        "message": "Список порожній"
-    },
     "options_userfilter_description": {
-        "message": "Тут ви можете додавати власні правила. Ця функція&nbsp;рекомендується лише для досвідчених користувачів, знайомих з HTML/CSS. Ознайомтеся з <a class='spl-user-descr-link' href='https://link.adtidy.org/forward.html?action=filterrules&from=options_screen&app=safari_extension' target='_blank'>настановами щодо правил фільтрування</a>, щоб&nbsp;навчитися створювати&nbsp;власні правила фільтрування."
+        "message": ""
     },
     "options_userfilter_import": {
         "message": "Імпортувати"
@@ -294,7 +297,7 @@
         "message": "Сповіщати про оновлення розширення"
     },
     "options_popup_update_title": {
-        "message": "Оновлення фільтрів завершено"
+        "message": "Фільтри успішно оновлено"
     },
     "options_popup_update_error_title": {
         "message": "Помилка оновлення фільтрів"
@@ -333,10 +336,10 @@
         "message": "Попередження"
     },
     "notification_content_blocker_overlimit_desc": {
-        "message": "Активовано забагато фільтрів. Safari може використовувати не більше %s правил в одній групі."
+        "message": ""
     },
     "options_content_blocker_overlimit": {
-        "message": "Активовано забагато фільтрів. Safari може використовувати не більше %s правил в одній групі."
+        "message": ""
     },
     "options_filters_list_search_placeholder": {
         "message": "Пошук"
@@ -369,7 +372,7 @@
         "message": "Вставити"
     },
     "main_menu_select-all": {
-        "message": "Обрати все"
+        "message": "Вибрати все"
     },
     "tray_menu_about": {
         "message": "Про додаток"
@@ -381,7 +384,7 @@
         "message": "Перевірити оновлення фільтрів"
     },
     "tray_menu_launch_at_startup": {
-        "message": "Запускати AdGuard під час входу"
+        "message": "Запускати AdGuard після входу в систему"
     },
     "tray_menu_quit": {
         "message": "Вихід"
@@ -402,7 +405,7 @@
         "message": "Блокувальники вмісту"
     },
     "options_content_blockers_desc": {
-        "message": "Увімкнено блокувальників: %s з 6 (кожен може містити до %s правил)"
+        "message": ""
     },
     "options_content_blockers_disabled_desc": {
         "message": "Блокувальники реклами вимкнені"
@@ -462,7 +465,7 @@
         "message": "6 розширень блокування вмісту"
     },
     "onboarding_tooltip_adguard_safari_content_blockers_info": {
-        "message": "Safari обмежує максимальну кількість правил блокування вмісту до %s для одного розширення. Цього недостатньо для AdGuard, щоб обробляти й блокувати усі можливі типи реклами та стеження. Саме тому ми створили 6 розширень, збільшивши таким чином ліміт до %s."
+        "message": ""
     },
     "onboarding_safari_btn": {
         "message": "Відкрити налаштування"
@@ -483,7 +486,7 @@
         "message": "До правил користувача додано нове правило:"
     },
     "options_filters_update_period": {
-        "message": "Інтервал оновлень"
+        "message": "Інтервал оновлення"
     },
     "options_filters_update_period_number": {
         "message": {
@@ -501,13 +504,13 @@
         "message": "Показувати AdGuard для Safari в панелі меню"
     },
     "options_launch_at_login": {
-        "message": "Запускати AdGuard для Safari при вході"
+        "message": "Запускати AdGuard для Safari після входу в систему"
     },
     "options_verbose_logging": {
-        "message": "Детальний журнал"
+        "message": "Детальне журналювання"
     },
     "options_verbose_logging_desc": {
-        "message": "Якщо увімкнено детальний журнал, розширення AdGuard для Safari виводитимуть додаткову інформацію в консолі браузера"
+        "message": "Якщо увімкнено, AdGuard для Safari писатиме додаткову інформацію в консолі браузера"
     },
     "options_enable_hardware_acceleration": {
         "message": "Увімкнути апаратне прискорення"
@@ -519,10 +522,10 @@
         "message": "Імпортування налаштувань"
     },
     "settings_import_success": {
-        "message": "Налаштування успішно імпортовані"
+        "message": "Налаштування успішно імпортовано"
     },
     "settings_import_error": {
-        "message": "Під час імпортування сталася помилка"
+        "message": "Під час імпорту налаштувань сталася помилка"
     },
     "settings_notification_protection_title": {
         "message": "Захист призупинено"
@@ -573,7 +576,7 @@
         }
     },
     "options_cb_rules_overlimit_info": {
-        "message": "Перевищено обмеження в %s правил. Вимкніть непотрібні правила для належної роботи програми.<br/>Зараз увімкнено правил: %s (вимкнено правил: $2)"
+        "message": ""
     },
     "options_cb_disabled_warning": {
         "message": "Вимкнено в Safari"
@@ -591,10 +594,10 @@
         "message": "Список дозволів"
     },
     "window_close_dialog_message": {
-        "message": "Продовжувати роботу AdGuard у фоновому режимі?"
+        "message": "Дозволити AdGuard працювати у фоновому режимі?"
     },
     "window_close_dialog_detail": {
-        "message": "Важливо, щоб AdGuard подовжував працювати у фоновому режимі, інакше він не зможе автоматично оновлювати фільтри та виконувати керування фільтруванням."
+        "message": "Важливо, щоб AdGuard подовжував працювати у фоновому режимі. Інакше він не зможе автоматично оновлювати фільтри та безпроблемно фільтрувати й надалі."
     },
     "window_close_dialog_checkbox": {
         "message": "Запам'ятати мій вибір"

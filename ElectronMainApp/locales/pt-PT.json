@@ -108,7 +108,7 @@
         "message": "Geral"
     },
     "options_general_desc": {
-        "message": "O AdGuard for Safari é um software gratuito e de código aberto. Agradecemos os seus comentários e contribuições. Se quiser comunicar um erro ou solicitar um recurso, vá até <a target='_blank' href='https://link.adtidy.org/forward.html?action=github&from=options_screen&app=safari_extension' class='link'>our GitHub repo</a>."
+        "message": ""
     },
     "options_allow_acceptable_ads": {
         "message": "Permitir anúncios de pesquisa e auto-promoção de sítios"
@@ -160,6 +160,9 @@
     },
     "options_filters_no_enabled": {
         "message": "Nenhum filtro ativado"
+    },
+    "options_filters_no_filters": {
+        "message": ""
     },
     "options_filters_version": {
         "message": "versão %s"
@@ -267,7 +270,7 @@
         "message": "Regras do utilizador"
     },
     "options_userfilter_no_user_rules": {
-        "message": "Lsta está vazia"
+        "message": ""
     },
     "options_userfilter_info_single": {
         "message": "%s regra do utilizador"
@@ -276,7 +279,7 @@
         "message": "%s regras do utilizador"
     },
     "options_userfilter_description": {
-        "message": "Pode adicionar as suas próprias regras ao &nbsp;este filtro. Esta opção é &nbsp;recomendada para utilizadores avançados familiarizados com HTML/CSS. Leia o <a class='spl-user-descr-link'href='https://link.adtidy.org/forward.html?action=filterrules&from=options_screen&app=safari_extension' target='_blank'> tutorial de regras de filtro </a > para &nbsp;aprender como &nbsp; escrever as suas próprias regras de filtro."
+        "message": ""
     },
     "options_userfilter_import": {
         "message": "Importar"
@@ -333,10 +336,10 @@
         "message": "Aviso"
     },
     "notification_content_blocker_overlimit_desc": {
-        "message": "Muitos filtros ativados. O Safari não pode usar mais de %s regras num grupo."
+        "message": ""
     },
     "options_content_blocker_overlimit": {
-        "message": "Muitos filtros ativados. O Safari não pode usar mais de %s regras num grupo."
+        "message": ""
     },
     "options_filters_list_search_placeholder": {
         "message": "Pesquisar"
@@ -402,7 +405,7 @@
         "message": "Bloqueadores de conteúdo"
     },
     "options_content_blockers_desc": {
-        "message": "Bloqueadores de anúncios ativados:%s de 6 (cada um pode conter até %s regras)"
+        "message": ""
     },
     "options_content_blockers_disabled_desc": {
         "message": "Os bloqueadores de anúncios estão desativados"
@@ -462,7 +465,7 @@
         "message": "6 extensões de bloqueio de conteúdo"
     },
     "onboarding_tooltip_adguard_safari_content_blockers_info": {
-        "message": "O Safari limita o número máximo de regras de bloqueio de conteúdo com %s por extensão. Isso não é suficiente para lidar com todos os tipos de anúncios e rastreadores que o AdGuard bloqueia. É por isso que fornecemos 6 extensões, aumentando assim esse limite para %s."
+        "message": ""
     },
     "onboarding_safari_btn": {
         "message": "Abrir preferências"
@@ -573,7 +576,7 @@
         }
     },
     "options_cb_rules_overlimit_info": {
-        "message": "O limite de %s regras foi excedido. Desative as regras desnecessárias para que a aplicação funcione corretamente.<br/>Regras ativadas no momento:%s (regras desativadas: $2)"
+        "message": ""
     },
     "options_cb_disabled_warning": {
         "message": "Desativado no Safari"

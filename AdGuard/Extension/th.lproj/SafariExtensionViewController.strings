@@ -10,9 +10,6 @@
 /* Class = "NSButtonCell"; title = "Report"; ObjectID = "d52-xp-fe4"; */
 "d52-xp-fe4.title" = "รายงาน";
 
-/* Class = "NSButtonCell"; title = "Pause AdGuard for Safari"; ObjectID = "p92-iZ-Q5D"; */
-"p92-iZ-Q5D.title" = "พัก AdGuard";
-
 /* Class = "NSButtonCell"; title = "Enabled on this website"; ObjectID = "t9o-h0-bnn"; */
 "t9o-h0-bnn.title" = "เปิดใช้งานบนเว็บไซต์นี้";
 

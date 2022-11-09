@@ -2,6 +2,8 @@ const { ipcRenderer } = require('electron');
 
 const utils = require('../../utils/common-utils');
 
+const CLEAR_SEARCH_VISIBLE_CLASS = 'clear-search--visible';
+
 const clearSearch = (nodes) => {
     // eslint-disable-next-line no-return-assign
     nodes.forEach((node) => {
@@ -58,9 +60,16 @@ const initGroupsSearch = (loadedFiltersInfo, getFilterTemplate) => {
 
     clearSearch(filters);
 
+    const clearSearchButton = document.querySelector('#clearGroupFiltersSearch');
+
     if (searchInput) {
         searchInput.addEventListener('input', utils.debounce((e) => {
             clearSearch(filters);
+            if (searchInput.value) {
+                clearSearchButton.classList.add(CLEAR_SEARCH_VISIBLE_CLASS);
+            } else {
+                clearSearchButton.classList.remove(CLEAR_SEARCH_VISIBLE_CLASS);
+            }
             searchFilters(e.target.value, filters, groups);
         }, SEARCH_DELAY_MS));
     }
@@ -69,13 +78,14 @@ const initGroupsSearch = (loadedFiltersInfo, getFilterTemplate) => {
         searchFilters(searchInput.value, filters, groups);
     }
 
-    document.querySelector('#clearGroupFiltersSearch')
+    clearSearchButton
         .addEventListener('click', () => {
             if (searchInput?.value) {
                 searchInput.value = '';
                 clearSearch(filters);
                 searchFilters('', filters, groups);
                 searchInput.focus();
+                clearSearchButton.classList.remove(CLEAR_SEARCH_VISIBLE_CLASS);
             }
         });
 };
@@ -112,10 +122,13 @@ function initFiltersSearch(category, renderCategoryFilters) {
         }));
     };
 
+    const clearSearchButton = document.querySelector(`#antibanner${category.groupId} .clear-filters-search`);
+
     searchInput.addEventListener('input', utils.debounce((e) => {
         let searchString;
         try {
             searchString = utils.escapeRegExp(e.target.value.trim());
+            clearSearchButton.classList.add(CLEAR_SEARCH_VISIBLE_CLASS);
         } catch (err) {
             /* eslint-disable-next-line no-console */
             console.log(err.message);
@@ -124,6 +137,7 @@ function initFiltersSearch(category, renderCategoryFilters) {
 
         if (!searchString) {
             resetFiltersSearch();
+            clearSearchButton.classList.remove(CLEAR_SEARCH_VISIBLE_CLASS);
             return;
         }
 
@@ -144,11 +158,12 @@ function initFiltersSearch(category, renderCategoryFilters) {
             });
     }, SEARCH_DELAY_MS));
 
-    document.querySelector(`#antibanner${category.groupId} .clear-filters-search`)
+    clearSearchButton
         .addEventListener('click', () => {
             if (searchInput?.value) {
                 searchInput.value = '';
                 resetFiltersSearch();
+                clearSearchButton.classList.remove(CLEAR_SEARCH_VISIBLE_CLASS);
                 searchInput.focus();
             }
         });

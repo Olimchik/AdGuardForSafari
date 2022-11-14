@@ -9,7 +9,8 @@ const log = require('./app/utils/log');
 const app = require('./app/app');
 const localStorage = require('./app/storage/storage');
 
-const REPORT_SAFARI_URL = 'https://reports.adguard.com/new_issue.html?product_type=Saf';
+// eslint-disable-next-line max-len
+const REPORT_SAFARI_URL = 'https://link.adtidy.org/forward.html?action=report&from=toolbar&app=safari_extension&product_type=Saf';
 
 /**
  * Addon toolbar controller.

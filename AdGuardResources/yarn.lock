@@ -2,10 +2,20 @@
 # yarn lockfile v1
 
 
-"@adguard/scriptlets@^1.6.8":
-  version "1.6.11"
-  resolved "https://registry.yarnpkg.com/@adguard/scriptlets/-/scriptlets-1.6.11.tgz#7a3c4e4fb4b45a0ba749822f135ff70ef43a50cf"
-  integrity sha512-cHGOUKLVym2k/NLGC+6NIjKSJJftQxFACiWmg57P99NOX6DTk5dlsqJ7xwFmh6/z0lgrEVkDF22MuVFDrbRMcg==
+"@adguard/assistant@^4.3.65":
+  version "4.3.65"
+  resolved "https://registry.yarnpkg.com/@adguard/assistant/-/assistant-4.3.65.tgz#be128b8ad4b7013e0a018013444ff60e433c6fe2"
+  integrity sha512-/e0AO0G94kyle2gkN33u09TbzIrMyTbTgWgj0mFNIr6XhLXsuDEbjfQPBKlkUmj+lu04+QFiEAh9J3xZzyYyMA==
+
+"@adguard/extended-css@^2.0.8":
+  version "2.0.8"
+  resolved "https://registry.yarnpkg.com/@adguard/extended-css/-/extended-css-2.0.8.tgz#55a516b4826e25a4288f7bc089c5b7991961b684"
+  integrity sha512-3rCJ2Nrzhub61JbjiMe/kYJK08gj+NBg+B8IddvA1rRBneGY29G10u0xOSyc9ax/i2RRs+8KxTbxCRTXTX1yrQ==
+
+"@adguard/scriptlets@^1.6.55":
+  version "1.6.55"
+  resolved "https://registry.yarnpkg.com/@adguard/scriptlets/-/scriptlets-1.6.55.tgz#e32941d1ae02405ce0e0996f550e5dcf39de7929"
+  integrity sha512-p6lt0midjcLDdMcZilnyIDtEQm43OljLGSvVnjUn1Dh3crONpCp+MI+PVys82fd+9VNiea30hkz5d/WQ7DIiYg==
   dependencies:
     "@babel/runtime" "^7.7.2"
     js-yaml "^3.13.1"
@@ -24,18 +34,10 @@ argparse@^1.0.7:
   dependencies:
     sprintf-js "~1.0.2"
 
-"assistant@git+https://github.com/AdguardTeam/AdguardAssistant#v4.3.43":
-  version "4.3.43"
-  resolved "git+https://github.com/AdguardTeam/AdguardAssistant#2e706484354e7e483b116fdbaed3a3ab8486b0c5"
-
 esprima@^4.0.0:
   version "4.0.1"
   resolved "https://registry.yarnpkg.com/esprima/-/esprima-4.0.1.tgz#13b04cdb3e6c5d19df91ab6987a8695619b0aa71"
   integrity sha512-eGuFFw7Upda+g4p+QHvnW0RyTX/SVeJBDM/gCtMARO0cLuT2HcEKnTPvhjV6aGeqrCB/sbNop0Kszm0jsaWU4A==
-
-"extended-css@git+https://github.com/AdguardTeam/ExtendedCss#v1.3.14":
-  version "1.3.14"
-  resolved "git+https://github.com/AdguardTeam/ExtendedCss#e8e2b1d1a732d3043b2227b4bd5511300b33ea3d"
 
 js-yaml@^3.13.1:
   version "3.14.1"

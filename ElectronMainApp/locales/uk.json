@@ -161,6 +161,9 @@
     "options_filters_no_enabled": {
         "message": "Немає увімкнених фільтрів"
     },
+    "options_filters_no_filters": {
+        "message": "Немає фільтрів"
+    },
     "options_filters_version": {
         "message": "версія %s"
     },

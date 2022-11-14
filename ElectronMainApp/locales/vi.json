@@ -162,7 +162,7 @@
         "message": "Không có bộ lọc nào được bật"
     },
     "options_filters_no_filters": {
-        "message": ""
+        "message": "Không có bộ lọc"
     },
     "options_filters_version": {
         "message": "phiên bản %s"

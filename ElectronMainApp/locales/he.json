@@ -162,7 +162,7 @@
         "message": "אין מסננים מאופשרים"
     },
     "options_filters_no_filters": {
-        "message": ""
+        "message": "ללא מסננים"
     },
     "options_filters_version": {
         "message": "גרסה %s"

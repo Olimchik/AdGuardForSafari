@@ -23,6 +23,12 @@
     "options_support_faq_description": {
         "message": "Häufig gestellte Fragen"
     },
+    "options_support_feature_request_title": {
+        "message": "Funktionsanfrage senden"
+    },
+    "options_support_feature_request_description": {
+        "message": "Vorschläge zur Verbesserung der App"
+    },
     "options_support_bug_report_title": {
         "message": "Fehler melden"
     },
@@ -168,7 +174,7 @@
         "message": "Version %s"
     },
     "options_filters_updated": {
-        "message": " aktualisiert: %s"
+        "message": "aktualisiert: %s"
     },
     "options_filters_empty_custom_filters": {
         "message": "Es wurden noch keine Eigenen Filter angelegt"

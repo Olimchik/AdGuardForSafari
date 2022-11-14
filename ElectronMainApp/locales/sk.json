@@ -23,6 +23,12 @@
     "options_support_faq_description": {
         "message": "Často kladené otázky"
     },
+    "options_support_feature_request_title": {
+        "message": "Odoslať požiadavku na funkciu"
+    },
+    "options_support_feature_request_description": {
+        "message": "Navrhnite spôsoby, ako aplikáciu vylepšiť"
+    },
     "options_support_bug_report_title": {
         "message": "Nahlásiť chybu"
     },

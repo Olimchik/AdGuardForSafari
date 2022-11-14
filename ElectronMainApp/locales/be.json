@@ -162,7 +162,7 @@
         "message": "Фільтры не ўключаны"
     },
     "options_filters_no_filters": {
-        "message": ""
+        "message": "Без фільтраў"
     },
     "options_filters_version": {
         "message": "версія %s"

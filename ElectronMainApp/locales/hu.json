@@ -162,7 +162,7 @@
         "message": "Nincsenek engedélyezett szűrők"
     },
     "options_filters_no_filters": {
-        "message": ""
+        "message": "Nincsenek szűrők"
     },
     "options_filters_version": {
         "message": "verzió %s"

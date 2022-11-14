@@ -79,13 +79,12 @@ const initGroupsSearch = (loadedFiltersInfo, getFilterTemplate) => {
     }
 
     clearSearchButton
-        .addEventListener('click', () => {
+        .addEventListener('click', (e) => {
             if (searchInput?.value) {
-                searchInput.value = '';
-                clearSearch(filters);
-                searchFilters('', filters, groups);
-                searchInput.focus();
                 clearSearchButton.classList.remove(CLEAR_SEARCH_VISIBLE_CLASS);
+                clearSearch(filters);
+                clearSearchEvent(e);
+                searchInput.focus();
             }
         });
 };

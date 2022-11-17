@@ -1,6 +1,6 @@
 {
     "name": "AdGuardSafariApp",
-    "version": "1.11.7",
+    "version": "1.11.8",
     "description": "",
     "main": "./main.js",
     "repository": "github:AdguardTeam/AdGuardForSafari",
@@ -32,15 +32,15 @@
         "electron-updater": "^4.3.8",
         "filters-downloader": "git+https://github.com/AdguardTeam/FiltersDownloader.git#v1.0.14",
         "i18n": "^0.8.3",
-        "safari-converter-lib": "git+https://github.com/AdguardTeam/SafariConverterLib.git#v2.0.27",
+        "safari-converter-lib": "git+https://github.com/AdguardTeam/SafariConverterLib.git#v2.0.31",
         "safari-ext": "./safari-ext",
         "sprintf-js": "^1.1.2",
         "xmlhttprequest": "^1.8.0"
     },
     "devDependencies": {
-        "@jest/schemas": "^28.1.3",
         "@electron/universal": "^1.3.0",
         "@jest-runner/electron": "^3.0.0",
+        "@jest/schemas": "^28.1.3",
         "@swc/cli": "^0.1.57",
         "@swc/core": "^1.3.8",
         "@swc/register": "^0.1.10",

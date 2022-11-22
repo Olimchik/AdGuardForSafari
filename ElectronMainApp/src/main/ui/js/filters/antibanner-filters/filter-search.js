@@ -196,6 +196,7 @@ function clearSearchEvent(event) {
         const clearSearchButton = document.querySelector('#clearGroupFiltersSearch');
         clearSearchButton.classList.remove(CLEAR_SEARCH_VISIBLE_CLASS);
         searchInput.value = '';
+        clearSearch(filters);
         searchFilters('', filters, groups);
     };
 

@@ -645,9 +645,11 @@ const AntiBannerFilters = function (options, contentBlockerInfo, environmentOpti
         setTimeout(() => {
             document.querySelector('#updateAntiBannerFilters').classList.remove('loading');
         }, ANIMATION_DELAY);
-        updatedFilters.forEach((filter) => {
-            updateFilterMetadata(filter);
-        });
+        if (Array.isArray(updatedFilters)) {
+            updatedFilters.forEach((filter) => {
+                updateFilterMetadata(filter);
+            });
+        }
     }
 
     function updateFilterMetadata(filter) {

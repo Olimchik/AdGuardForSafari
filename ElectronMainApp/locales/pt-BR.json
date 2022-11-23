@@ -23,6 +23,12 @@
     "options_support_faq_description": {
         "message": "Perguntas frequentes"
     },
+    "options_support_feature_request_title": {
+        "message": "Enviar solicitação de recurso"
+    },
+    "options_support_feature_request_description": {
+        "message": "Sugerir maneiras de melhorar o aplicativo"
+    },
     "options_support_bug_report_title": {
         "message": "Reportar um problema"
     },

@@ -469,7 +469,6 @@ const AntiBannerFilters = function (options, contentBlockerInfo, environmentOpti
     function updateLoadedFiltersInfo(data) {
         loadedFiltersInfo.initLoadedFilters(data.filters, data.categories);
         updateRulesCountInfo(data.rulesInfo);
-        setLastUpdatedTimeText(loadedFiltersInfo.lastUpdateTime);
         utils.setUserrulesNum(contentBlockerInfo.userRulesNum);
         utils.setIsAllowlistInverted(!userSettings.values[userSettings.names.DEFAULT_ALLOWLIST_MODE]);
         utils.setAllowlistInfo(contentBlockerInfo.allowlistedNum);
@@ -545,6 +544,7 @@ const AntiBannerFilters = function (options, contentBlockerInfo, environmentOpti
         ipcRenderer.send('renderer-to-main', JSON.stringify({
             'type': 'checkAntiBannerFiltersUpdate',
         }));
+        setLastUpdatedTimeText(new Date());
     }
 
     function setLastUpdatedTimeText(lastUpdateTime) {

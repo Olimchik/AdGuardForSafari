@@ -144,14 +144,13 @@ function confirmWindowClose() {
  * Creates main window
  */
 function loadMainWindow(onWindowLoaded) {
-
     if (!mainWindow) {
         mainWindow = createWindow();
     }
     mainWindow.loadFile('./src/main/ui/options.html');
 
     // reloads page to update color theme if OS color theme has been changed
-    nativeTheme.on('updated', function theThemeHasChanged () {
+    nativeTheme.on('updated', () => {
         if (mainWindow) {
             mainWindow.webContents.reload();
         }
@@ -187,7 +186,7 @@ function loadMainWindow(onWindowLoaded) {
     });
 
     // Open _target=blank hrefs in external window
-    mainWindow.webContents.on('new-window', function (event, url) {
+    mainWindow.webContents.on('new-window', (event, url) => {
         event.preventDefault();
         shell.openExternal(url);
     });
@@ -274,6 +273,7 @@ function isOpenedAtLogin() {
  * otherwise shows the dialog message and moves `AdGuard for Safari.app` there
  */
 const checkIsInApplicationsFolder = () => {
+    log.info(`Check if is in app folder, getConfiguration ${getConfiguration()}`);
     if (getConfiguration() === 'Debug') {
         return;
     }
@@ -313,9 +313,12 @@ let tray;
  * Some APIs can only be used after this event occurs.
  */
 app.on('ready', (() => {
+    log.info('App ready');
     i18n.setAppLocale(app.getLocale());
+    log.info(`Channel is: ${app.getChannel()}`);
     if (getChannel() !== 'MAS') {
         checkIsInApplicationsFolder();
+        log.info('continue launch, after check');
     }
 
     log.info(`Starting AdGuard v${app.getVersion()} (${safariExt.getBuildNumber()})`);

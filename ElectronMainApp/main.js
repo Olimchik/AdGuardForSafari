@@ -315,7 +315,7 @@ let tray;
 app.on('ready', (() => {
     log.info('App ready');
     i18n.setAppLocale(app.getLocale());
-    log.info(`Channel is: ${app.getChannel()}`);
+    log.info(`Channel is: ${getChannel()}`);
     if (getChannel() !== 'MAS') {
         checkIsInApplicationsFolder();
         log.info('continue launch, after check');

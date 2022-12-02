@@ -18,9 +18,6 @@ const updater = require('./updater');
 const log = require('./app/utils/log');
 const toolbarController = require('./toolbar-controller');
 const { getContentBlockersInfo } = require('./app/content-blocker/content-blocker-adapter');
-const storage = require('./app/storage/storage');
-
-const FILTERS_UPDATE_LAST_CHECK_KEY = 'filters-update-last-check';
 
 /**
  * Initializes event listener
@@ -36,14 +33,11 @@ module.exports.init = function () {
             case 'getFiltersMetadata':
                 const filtersMetadata = filterCategories.getFiltersMetadata();
                 filtersMetadata.rulesInfo = antibanner.getContentBlockerInfo();
-                filtersMetadata.filtersUpdateLastCheck = storage.getItem(FILTERS_UPDATE_LAST_CHECK_KEY);
+                filtersMetadata.filtersUpdateLastCheck = filters.getFiltersUpdateLastCheck();
                 sendResponse(event, 'getFiltersMetadataResponse', filtersMetadata);
                 break;
             case 'changeUserSetting':
                 settings.setProperty(message.key, message.value);
-                break;
-            case 'setFilterUpdateLastCheck':
-                storage.setItem(FILTERS_UPDATE_LAST_CHECK_KEY, message.filtersUpdateLastCheck);
                 break;
             case 'changeLaunchAtLogin':
                 settings.changeLaunchAtLogin(message.value);

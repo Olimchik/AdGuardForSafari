@@ -70,19 +70,22 @@ module.exports = (() => {
      * @param forceUpdate Normally we respect filter update period. But if this parameter is
      *                    true - we ignore it and check updates for all filters.
      * @param filters     Optional Array of filters to update
+     * @param filtersUpdateCheckDate optional date when common filters update was started
      */
-    const checkAntiBannerFiltersUpdate = (forceUpdate, filters) => {
+    const checkAntiBannerFiltersUpdate = (forceUpdate, filters, filtersUpdateCheckDate) => {
         const onSuccess = (updatedFilters) => {
             listeners.notifyListeners(events.UPDATE_FILTERS_SHOW_POPUP, {
                 success: true,
                 updatedFilters,
                 forceUpdate,
+                filtersUpdateLastCheck: filtersUpdateCheckDate,
             });
         };
         const onError = () => {
             listeners.notifyListeners(events.UPDATE_FILTERS_SHOW_POPUP, {
                 success: false,
                 forceUpdate,
+                filtersUpdateLastCheck: filtersUpdateCheckDate,
             });
         };
 

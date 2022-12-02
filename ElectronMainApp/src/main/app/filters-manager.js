@@ -1,6 +1,7 @@
 const config = require('config');
 const fs = require('fs');
 const path = require('path');
+
 const listeners = require('../notifier');
 const events = require('../events');
 const subscriptions = require('./filters/subscriptions');
@@ -13,8 +14,10 @@ const log = require('./utils/log');
 const filtersUpdate = require('./filters/filters-update');
 const serviceClient = require('./filters/service-client');
 const appPack = require('../../utils/app-pack');
-
 const { CUSTOM_FILTERS_START_ID } = require('./filters/constants');
+const storage = require('./storage/storage');
+
+const FILTERS_UPDATE_LAST_CHECK_KEY = 'filters-update-last-check';
 
 /**
  * Filters manager
@@ -436,7 +439,9 @@ module.exports = (() => {
      *                    true - we ignore it and check updates for all filters.
      */
     const checkAntiBannerFiltersUpdate = (forceUpdate) => {
-        filtersUpdate.checkAntiBannerFiltersUpdate(forceUpdate);
+        const currentDate = new Date();
+        setFiltersUpdateLastCheck(currentDate);
+        filtersUpdate.checkAntiBannerFiltersUpdate(forceUpdate, null, currentDate);
     };
 
     /**
@@ -502,6 +507,14 @@ module.exports = (() => {
         });
     };
 
+    const setFiltersUpdateLastCheck = (value) => {
+        storage.setItem(FILTERS_UPDATE_LAST_CHECK_KEY, value);
+    };
+
+    const getFiltersUpdateLastCheck = () => {
+        return storage.getItem(FILTERS_UPDATE_LAST_CHECK_KEY);
+    };
+
     return {
         getFilters,
         getGroups,
@@ -529,5 +542,7 @@ module.exports = (() => {
         checkAntiBannerFiltersUpdate,
         removeObsoleteFilters,
         cleanRemovedCustomFilters,
+
+        getFiltersUpdateLastCheck,
     };
 })();

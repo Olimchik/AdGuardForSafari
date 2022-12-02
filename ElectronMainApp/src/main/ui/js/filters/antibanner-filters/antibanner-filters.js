@@ -492,13 +492,6 @@ const AntiBannerFilters = function (options, contentBlockerInfo, environmentOpti
         }));
     }
 
-    function setFiltersUpdateLastCheck(date) {
-        ipcRenderer.send('renderer-to-main', JSON.stringify({
-            'type': 'setFilterUpdateLastCheck',
-            filtersUpdateLastCheck: date,
-        }));
-    }
-
     function toggleFilterState(target) {
         const filterId = target.value - 0;
         if (target.checked) {
@@ -552,9 +545,6 @@ const AntiBannerFilters = function (options, contentBlockerInfo, environmentOpti
         ipcRenderer.send('renderer-to-main', JSON.stringify({
             'type': 'checkAntiBannerFiltersUpdate',
         }));
-        const currentDate = new Date();
-        setLastUpdatedTimeText(currentDate);
-        setFiltersUpdateLastCheck(currentDate);
     }
 
     function setLastUpdatedTimeText(date) {
@@ -640,7 +630,7 @@ const AntiBannerFilters = function (options, contentBlockerInfo, environmentOpti
         updateFilterMetadata(filter);
     }
 
-    function onFilterUpdatesFinished(updatedFilters) {
+    function onFilterUpdatesFinished(updatedFilters, filtersUpdateLastCheck) {
         // set timeout to let the update button animation turn around
         setTimeout(() => {
             document.querySelector('#updateAntiBannerFilters').classList.remove('loading');
@@ -649,6 +639,9 @@ const AntiBannerFilters = function (options, contentBlockerInfo, environmentOpti
             updatedFilters.forEach((filter) => {
                 updateFilterMetadata(filter);
             });
+        }
+        if (filtersUpdateLastCheck) {
+            setLastUpdatedTimeText(filtersUpdateLastCheck);
         }
     }
 

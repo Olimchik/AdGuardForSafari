@@ -126,7 +126,10 @@ const initPage = function (response) {
                     controller.onAppUpdateDownloaded(options);
                     break;
                 case EventNotifierTypes.UPDATE_FILTERS_SHOW_POPUP:
-                    controller.antiBannerFilters.onFilterUpdatesFinished();
+                    controller.antiBannerFilters.onFilterUpdatesFinished(
+                        options.updatedFilters,
+                        options.filtersUpdateLastCheck
+                    );
                     break;
             }
         });
